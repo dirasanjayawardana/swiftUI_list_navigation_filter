@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var emojis: [Emoji] = EmojiProvider.allEmojis()
-    
+    @State private var emojis: [Emoji] = EmojiProvider.allEmojis()
     @State private var searchInput: String = ""
     @State private var isRedacted: Bool = true
     
@@ -47,11 +46,21 @@ struct ContentView: View {
             .listStyle(.automatic)
             .navigationTitle("Emoji")
             .onAppear(perform: {
-                // setelah 2 detik ubah state isRedected
+                // setelah 2 detik ubah state isRedacted
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
                     isRedacted = false
                 })
             })
+            .refreshable {
+                isRedacted = true
+                
+                let newRowEmoji = EmojiProvider.allEmojis().randomElement()
+                emojis.insert(newRowEmoji ?? Emoji(emoji: "default", name: "default", description: "default"), at: 0)
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+                    isRedacted = false
+                })
+            }
             .searchable(
                 text: $searchInput,
                 placement: .navigationBarDrawer(displayMode: .always),
