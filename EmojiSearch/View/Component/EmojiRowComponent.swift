@@ -24,7 +24,7 @@ struct EmojiRowComponent: View {
                     .font(.system(.headline, design: .rounded))
                 Text(emoji.description)
                     .font(.system(.subheadline, design: .rounded))
-                    .lineLimit(3, reservesSpace: false)
+                    .lineLimit(3, reservesSpace: true)
             }
         }
     }
