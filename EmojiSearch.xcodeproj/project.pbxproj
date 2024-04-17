@@ -12,6 +12,7 @@
 		52869BE42BCF634700AFE0C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52869BE32BCF634700AFE0C7 /* Assets.xcassets */; };
 		52869BE72BCF634700AFE0C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52869BE62BCF634700AFE0C7 /* Preview Assets.xcassets */; };
 		52869BEE2BCF684E00AFE0C7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 52869BED2BCF684E00AFE0C7 /* .gitignore */; };
+		52869BF42BCF6FA600AFE0C7 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52869BF32BCF6FA600AFE0C7 /* Emoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		52869BE32BCF634700AFE0C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52869BE62BCF634700AFE0C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		52869BED2BCF684E00AFE0C7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		52869BF32BCF6FA600AFE0C7 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +56,10 @@
 		52869BDE2BCF634600AFE0C7 /* EmojiSearch */ = {
 			isa = PBXGroup;
 			children = (
-				52869BDF2BCF634600AFE0C7 /* EmojiSearchApp.swift */,
-				52869BE12BCF634600AFE0C7 /* ContentView.swift */,
-				52869BE32BCF634700AFE0C7 /* Assets.xcassets */,
+				52869BF22BCF6F7000AFE0C7 /* Model */,
+				52869BEF2BCF6CAD00AFE0C7 /* App */,
+				52869BF02BCF6CB400AFE0C7 /* View */,
+				52869BF12BCF6CDC00AFE0C7 /* Resources */,
 				52869BE52BCF634700AFE0C7 /* Preview Content */,
 			);
 			path = EmojiSearch;
@@ -68,6 +71,38 @@
 				52869BE62BCF634700AFE0C7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52869BEF2BCF6CAD00AFE0C7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				52869BDF2BCF634600AFE0C7 /* EmojiSearchApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		52869BF02BCF6CB400AFE0C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52869BE12BCF634600AFE0C7 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52869BF12BCF6CDC00AFE0C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52869BE32BCF634700AFE0C7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		52869BF22BCF6F7000AFE0C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52869BF32BCF6FA600AFE0C7 /* Emoji.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52869BF42BCF6FA600AFE0C7 /* Emoji.swift in Sources */,
 				52869BE22BCF634600AFE0C7 /* ContentView.swift in Sources */,
 				52869BE02BCF634600AFE0C7 /* EmojiSearchApp.swift in Sources */,
 			);
@@ -290,9 +326,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dira.EmojiSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,9 +358,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dira.EmojiSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
