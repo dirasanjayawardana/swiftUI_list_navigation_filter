@@ -11,6 +11,7 @@ struct ContentView: View {
     var emojis: [Emoji] = EmojiProvider.allEmojis()
     
     @State private var searchInput: String = ""
+    @State private var isRedacted: Bool = true
     
     var emojiSearchResult: [Emoji] {
         // menjaankan code setelahnya ketika kondisi di guard terpenuhi, jika tidak akan eksekusi else di guard
@@ -25,11 +26,32 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List(emojiSearchResult) { emoji in
-                EmojiRowComponent(emoji: emoji)
-                    .listRowSeparator(.visible)
+                // NavigationLink {
+                //     EmojiDetailView(emoji: emoji)
+                // } label: {
+                //     EmojiRowComponent(emoji: emoji)
+                //         .listRowSeparator(.visible)
+                // }
+                NavigationLink(destination: {
+                    EmojiDetailView(emoji: emoji)
+                }, label: {
+                    if isRedacted {
+                        EmojiRowComponent(emoji: emoji)
+                            .redacted(reason: .placeholder)
+                    } else {
+                        EmojiRowComponent(emoji: emoji)
+                            .listRowSeparator(.visible)
+                    }
+                })
             }
             .listStyle(.automatic)
             .navigationTitle("Emoji")
+            .onAppear(perform: {
+                // setelah 2 detik ubah state isRedected
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+                    isRedacted = false
+                })
+            })
             .searchable(
                 text: $searchInput,
                 placement: .navigationBarDrawer(displayMode: .always),
