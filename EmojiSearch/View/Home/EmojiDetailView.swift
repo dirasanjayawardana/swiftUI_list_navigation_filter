@@ -28,6 +28,9 @@ struct EmojiDetailView: View {
                     Spacer()
                 }
                 .padding()
+                
+                InfoBoxComponent()
+                    .padding(.horizontal)
             }
             .ignoresSafeArea()
             .navigationTitle(emoji.name)

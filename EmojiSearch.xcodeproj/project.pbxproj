@@ -17,6 +17,7 @@
 		52869BFA2BCF75D600AFE0C7 /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52869BF92BCF75D600AFE0C7 /* RandomColor.swift */; };
 		52869BFD2BCF840700AFE0C7 /* EmojiDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52869BFC2BCF840700AFE0C7 /* EmojiDetailView.swift */; };
 		52869BFF2BCF844C00AFE0C7 /* HeaderDetailComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52869BFE2BCF844C00AFE0C7 /* HeaderDetailComponent.swift */; };
+		52AF22A42BD0B3DE00F20B87 /* InfoBoxComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF22A32BD0B3DE00F20B87 /* InfoBoxComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		52869BF92BCF75D600AFE0C7 /* RandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
 		52869BFC2BCF840700AFE0C7 /* EmojiDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiDetailView.swift; sourceTree = "<group>"; };
 		52869BFE2BCF844C00AFE0C7 /* HeaderDetailComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetailComponent.swift; sourceTree = "<group>"; };
+		52AF22A32BD0B3DE00F20B87 /* InfoBoxComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBoxComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			children = (
 				52869BF62BCF72AB00AFE0C7 /* EmojiRowComponent.swift */,
 				52869BFE2BCF844C00AFE0C7 /* HeaderDetailComponent.swift */,
+				52AF22A32BD0B3DE00F20B87 /* InfoBoxComponent.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52869BF42BCF6FA600AFE0C7 /* Emoji.swift in Sources */,
+				52AF22A42BD0B3DE00F20B87 /* InfoBoxComponent.swift in Sources */,
 				52869BFD2BCF840700AFE0C7 /* EmojiDetailView.swift in Sources */,
 				52869BFA2BCF75D600AFE0C7 /* RandomColor.swift in Sources */,
 				52869BF72BCF72AB00AFE0C7 /* EmojiRowComponent.swift in Sources */,
