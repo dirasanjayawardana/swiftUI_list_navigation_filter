@@ -2,7 +2,7 @@
 //  DetailView.swift
 //  EmojiSearch
 //
-//  Created by MACBOOK PRO on 17/04/24.
+//  Created by DIRA on 17/04/24.
 //
 
 import SwiftUI
