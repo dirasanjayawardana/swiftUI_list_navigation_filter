@@ -16,7 +16,7 @@ Proyek latihan membuat aplikasi katalog emoji, BCAS Training ft Fazztrack
 - [@dirasanjayawardana](https://www.github.com/dirasanjayawardana)
 
 
-## Bupported
+## Supported
 
 ![Apple](https://img.shields.io/badge/Apple-%23000000.svg?style=for-the-badge&logo=apple&logoColor=white)
 
