@@ -18,6 +18,7 @@
 		52869BFD2BCF840700AFE0C7 /* EmojiDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52869BFC2BCF840700AFE0C7 /* EmojiDetailView.swift */; };
 		52869BFF2BCF844C00AFE0C7 /* HeaderDetailComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52869BFE2BCF844C00AFE0C7 /* HeaderDetailComponent.swift */; };
 		52AF22A42BD0B3DE00F20B87 /* InfoBoxComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF22A32BD0B3DE00F20B87 /* InfoBoxComponent.swift */; };
+		52AF22A72BD0B98F00F20B87 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF22A62BD0B98F00F20B87 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		52869BFC2BCF840700AFE0C7 /* EmojiDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiDetailView.swift; sourceTree = "<group>"; };
 		52869BFE2BCF844C00AFE0C7 /* HeaderDetailComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetailComponent.swift; sourceTree = "<group>"; };
 		52AF22A32BD0B3DE00F20B87 /* InfoBoxComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBoxComponent.swift; sourceTree = "<group>"; };
+		52AF22A62BD0B98F00F20B87 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		52869BF02BCF6CB400AFE0C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				52AF22A52BD0B96600F20B87 /* Tab */,
 				52869BF52BCF728400AFE0C7 /* Component */,
 				52869BFB2BCF83F100AFE0C7 /* Home */,
 			);
@@ -142,6 +145,14 @@
 				52869BFC2BCF840700AFE0C7 /* EmojiDetailView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		52AF22A52BD0B96600F20B87 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				52AF22A62BD0B98F00F20B87 /* MainView.swift */,
+			);
+			path = Tab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52869BF42BCF6FA600AFE0C7 /* Emoji.swift in Sources */,
+				52AF22A72BD0B98F00F20B87 /* MainView.swift in Sources */,
 				52AF22A42BD0B3DE00F20B87 /* InfoBoxComponent.swift in Sources */,
 				52869BFD2BCF840700AFE0C7 /* EmojiDetailView.swift in Sources */,
 				52869BFA2BCF75D600AFE0C7 /* RandomColor.swift in Sources */,
